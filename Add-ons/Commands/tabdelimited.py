@@ -1,24 +1,27 @@
 import os
 from waapi import WaapiClient
+from tkinter import filedialog
+import numpy as np
 
+# get Import files
+file =  filedialog.askopenfilenames(initialdir ="C:/",title = "choose your tab Delimited txt file")
 
 # Connect (default URL)
 client = WaapiClient()
 
 # RPC
-kwargs = {
-    "importLanguage": "SFX", 
-    "importOperation": "useExisting",
-    "importFile": os.getcwd()+"\\Test1\\Tabimport.txt" }
-result = client.call("ak.wwise.core.audio.importTabDelimited", kwargs)
+for i in np.asarray(file):
+    kwargs = {
+        "importLanguage": "SFX", 
+        "importOperation": "useExisting",
+        "importFile": i, #os.getcwd()+"\\Test1\\Tabimport.txt",
+        "autoAddToSourceControl": True }
+    result = client.call("ak.wwise.core.audio.importTabDelimited", kwargs)
 
-
+    print(result)
 
 # Disconnect
 client.disconnect()
-
-
-
 
 
 
