@@ -1,0 +1,3 @@
+﻿Audio File	Object Path	Object Type	Notes
+Yamaha-V50-Ride-Pattern-120bpm.wav	\Actor-Mixer Hierarchy\Dial\Dialogues\Captain_B\TEST1	Sound Voice	안녕
+Yamaha-V50-Rock-Beat-120bpm.wav	\Actor-Mixer Hierarchy\Dial\Dialogues\Captain_B\TEST2	Sound Voice	헤헤

@@ -1,0 +1,3 @@
+﻿Audio File	Object Path	Object Type	Notes
+Yamaha-V50-Industrial-Beat-120bpm.wav	\Actor-Mixer Hierarchy\Dial\Dialogues\Captain_A\UNA-GG-AL_01	Sound Voice	하이
+Yamaha-V50-OilDrum.wav	\Actor-Mixer Hierarchy\Dial\Dialogues\Captain_A\UNA-HS-AL_01	Sound Voice	방기
